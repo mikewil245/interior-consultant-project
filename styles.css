@@ -58,13 +58,12 @@ select {
   grid-column: 2/3;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1em;
 }
-
 
 header p {
   width: 100%;
@@ -185,16 +184,14 @@ span {
 
 .read-more {
   color: #fff;
- font-family: Montserrat;
+  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-
-
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   header {
     margin-top: 1em;
     display: flex;
@@ -227,20 +224,19 @@ span {
     margin-bottom: 8rem;
   }
 
-  .right-side{
-    width: 90%;
-    
+  .right-side {
+    position: relative;
+    width: 80%;
   }
 
   .interior-wrapper {
     position: absolute;
-    left: 100px;
-    bottom: -90px;
-   width: 70%;
+    right: -250px;
+    left: 200px;
+    bottom: -100px;
+    margin-bottom: 2rem;
+
     padding: 0.5em;
     background-color: rgb(24, 24, 24);
   }
-
-  
-
 }
