@@ -1,0 +1,239 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set body defaults */
+body {
+  background-color: black;
+  font-weight: 400;
+  font-size: 1.25rem;
+  min-height: 120vh;
+
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 600px);
+  position: relative;
+}
+
+.left-side {
+  width: 400px;
+}
+
+.right-side {
+  grid-column: 2/3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+header p {
+  width: 100%;
+  padding: 0.64em;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  color: #fff;
+  font-family: "Crimson Pro", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+ul {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-right: 3em;
+  display: flex;
+  gap: 1.5em;
+  color: white;
+  list-style-type: none;
+}
+
+.logo {
+  margin-left: 3.5em;
+  font-size: 0.9rem;
+  width: 30%;
+  max-width: 125px;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.left-side p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.interior-img {
+  margin-top: 4em;
+}
+
+h3 {
+  color: #fff;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+span {
+  color: var(--Gray-3, #828282);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.aliza-profile {
+  width: 13%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-job {
+  display: flex;
+  gap: 0.7em;
+}
+
+.small-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.design-p {
+  margin-top: 1em;
+  width: 70%;
+  color: white;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.interior-wrapper {
+  position: absolute;
+  bottom: -73px;
+  left: 63%;
+
+  width: 370px;
+  padding: 0.5em;
+  background-color: rgb(24, 24, 24);
+}
+
+.read-more {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 900px) {
+  header {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-right: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    color: white;
+    list-style-type: none;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  .right-side {
+    width: 90%;
+  }
+
+  .interior-wrapper {
+    position: absolute;
+    left: 90px;
+    bottom: -90px;
+    width: 350px;
+    padding: 0.5em;
+    background-color: rgb(24, 24, 24);
+  }
+}
