@@ -58,12 +58,13 @@ select {
   grid-column: 2/3;
 }
 
-header {
+header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1em;
 }
+
 
 header p {
   width: 100%;
@@ -184,14 +185,16 @@ span {
 
 .read-more {
   color: #fff;
-  font-family: Montserrat;
+ font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-@media (max-width: 900px) {
+
+
+@media (max-width: 600px) {
   header {
     margin-top: 1em;
     display: flex;
@@ -224,16 +227,20 @@ span {
     margin-bottom: 8rem;
   }
 
-  .right-side {
+  .right-side{
     width: 90%;
+    
   }
 
   .interior-wrapper {
     position: absolute;
-    left: 90px;
+    left: 100px;
     bottom: -90px;
-    width: 350px;
+   width: 70%;
     padding: 0.5em;
     background-color: rgb(24, 24, 24);
   }
+
+  
+
 }
