@@ -211,7 +211,7 @@ span {
   align-items: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   header {
     display: flex;
     flex-direction: column;
@@ -231,7 +231,7 @@ span {
 
   .container {
     position: relative;
-    width: 600px;
+    width: 800px;
 
     width: 60%;
     display: flex;
@@ -253,7 +253,7 @@ span {
 
   .image {
     min-width: 30rem;
-    max-width: 12.5rem;
+    max-width: 60.5rem;
     margin-top: 2em;
     height: auto;
   }
@@ -263,10 +263,10 @@ span {
     padding: 1em;
     width: 20%;
     max-width: 420px;
-    min-width: 400px;
+    min-width: 410px;
     top: 95%; /*top: 90%; */
 
-    left: 5%; /* left: 57%;*/
+    left: 25%; /* left: 57%;*/
     transform: translate(-18%, -13%); /*transform: translate(18%, -8%);*/
     z-index: 500;
     background-color: #181719;
