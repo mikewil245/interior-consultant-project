@@ -246,14 +246,16 @@ span {
     margin-top: 5em;
     margin-right: 0em;
     margin-left: 0 em;
-    width: 100%;
+    width: 40%;
     min-width: 18.75rem;
-    max-width: 40p;
+    max-width: 18em;
     min-height: 0px;
   }
 
+  
+
   .image {
-    min-width: 30rem;
+    min-width: 22rem;
     max-width: 60.5rem;
     margin-top: 2em;
     height: auto;
@@ -262,9 +264,9 @@ span {
   .person-position {
     position: absolute;
     padding: 1em;
-    width: 20%;
-    max-width: 420px;
-    min-width: 410px;
+    width: 85%;
+    max-width: 26rem;
+    min-width: 18rem;
     top: 95%; /*top: 90%; */
 
     left: 25%; /* left: 57%;*/
